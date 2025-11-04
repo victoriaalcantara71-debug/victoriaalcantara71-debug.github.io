@@ -36,14 +36,19 @@
     <button class="answerButton" id="noButton">NÃO</button>
     <br>
     <img src ='fofo.gif' alt = 'cat asking question' class="responsive">
-    <script>
-        document.getElementById('noButton').addEventListener('click', function() {
-            if (this.textContent === 'NÃO') {
-                this.textContent = 'SIM'; // First click changes the text to Yes
-            } else {
-                window.location.href = 'thankyou.html'; // Second click redirects to the index page
-            }
+	
+       <script>
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="thankyou.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
         });
     </script>
-</body>
+  </body>
 </html>
