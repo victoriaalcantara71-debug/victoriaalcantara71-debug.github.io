@@ -31,17 +31,17 @@
     </style>
 </head>
 <body>
-    <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
-    <button class="answerButton" onclick="location.href='thankyou.html'">Yes</button>
-    <button class="answerButton" id="noButton">I no no wanna</button>
+    <div id="valentineQuestion"><b>Quer namorar comigo</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">SIM</button>
+    <button class="answerButton" id="noButton">NÃO</button>
     <br>
-    <img src ='cat.gif' alt = 'cat asking question' class="responsive">
+    <img src ='fofo.gif' alt = 'cat asking question' class="responsive">
     <script>
         document.getElementById('noButton').addEventListener('click', function() {
-            if (this.textContent === 'I no no wanna') {
-                this.textContent = 'Yes'; // First click changes the text to Yes
+            if (this.textContent === 'NÃO') {
+                this.textContent = 'SIM'; // First click changes the text to Yes
             } else {
-                window.location.href = 'thankyou.html'; // Second click redirects to the congratulations page
+                window.location.href = 'thankyouj.html'; // Second click redirects to the congratulations page
             }
         });
     </script>
